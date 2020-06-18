@@ -1,0 +1,330 @@
+html,
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7a6665;
+    width: 100%;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Style the top navigation bar */
+nav {
+    background-color: #1c1c1c;
+    z-index: 99;
+    height: 6rem;
+    top: 0;
+    width: 100%;
+    padding: 0.5rem;
+    position: fixed;
+}
+nav ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem;
+    overflow: hidden;
+    color: #f3f3f3;
+    width: 30%;
+}
+li {
+    float: left;
+}
+
+li a {
+    float: right;
+    display: block;
+    color: #f3f3f3;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: grey;
+}
+nav img {
+    float: left;
+    margin-left: 60px;
+    margin-top: 1rem;
+}
+
+header {
+    background-image: url("./Images/banner.jpg");
+    margin-top: 6rem;
+    z-index: 88;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-size: cover;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    text-align: left;
+    transform: translate(-20%, -50%);
+}
+.padding-left-right {
+    padding: 0 10% 0% 10%;
+}
+/*section 1  */
+
+.lorem-section {
+    background-color: #ffffff;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 2rem;
+}
+.lorem-section .content-container h1 {
+    color: #e5474b;
+}
+.lorem-section.content-container p {
+    margin: 0;
+    padding: 3rem;
+}
+.button {
+    background-color: #ffffff;
+    border: none;
+    border: 2px solid #e5474b;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2rem 2rem 2rem 0;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #efcbcc;
+}
+/*section 2  */
+.product-section {
+   
+    display: flex;
+    overflow: hidden;
+    padding: 0 10% 0% 5%;
+    background-color: #f7f7f7;
+}
+.product-section .content-container {
+    background-color: #f3f3f3;
+    width: 50%;
+    padding: 2rem 3rem 2rem 0.5rem;
+    
+    margin-left: 4rem;
+}
+.product-section .image-container {
+    background-color: #f7f7f7;
+    width: 50%;
+    padding-top: 2rem 1rem 2rem 13rem;
+    margin-left: 8rem;
+
+}
+.h1 {
+    color: #e5474b;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:1.1rem;
+    line-height: 2.5rem;
+}
+.product-section .image-container p {
+    padding: 1rem 0 1rem 0;
+}
+.product-section .content-container p {
+    padding: 1rem 0 1rem 0;
+}
+
+/*section 3  */ 
+
+.about-section {
+    background-color: #ffffff;
+    display: flex;
+    overflow: hidden;
+    padding: 5% 2% 5% 10%;
+}
+.about-section .content-container {
+    width: 33%;
+    padding-top: 2rem;
+}
+.about-section img {
+    height: 3rem;
+    padding-top: 2rem;
+}
+
+/* form section */
+.form-section {
+    background-color: #e5474b;
+    padding: 5rem 7rem 0rem 7rem;
+}
+#h1 {
+    color: white;
+    font-size:2.5rem;
+    padding-left: 1rem;;
+}
+h4 {
+    color: white;
+    padding: 2rem 3rem 0 0;
+} 
+
+form  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+label {
+    display: block;
+    color: #fff;
+}
+.form-field {
+    width: 50%;
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    
+}
+
+.form-field:nth-child(1) {
+    float: left;
+}
+.form-field:nth-child(2) {
+    float: right;
+}
+.form-field:nth-child(3) {
+    float: none;
+    clear: both;
+    width: 100%;
+}
+
+.form-input{
+    width: 90%;
+    line-height: 2.5rem;
+    border:2px solid #ee7779;
+    background-color: #e6464b;
+
+}
+.form-input:focus{
+background: #fff;
+outline: 2px solid #ee7779;
+
+}
+/*footer section  */
+footer {
+    background-color: #e5474b;
+    width:100%;
+    display:inline-block;
+}
+
+#p{
+    padding-bottom:3rem;
+    color:#ffffff6b
+}
+.btn-white {
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+.btn-white:hover {
+    background: #fff3;
+}
+/*CSS for responsive design  */
+@media only screen and (max-width: 600px) {
+    nav {
+        height: 5rem;
+    }
+    nav img {
+        height: 2rem;
+        margin-left: 0;
+    }
+    nav ul {
+        width: 60%;
+        padding: 0.8rem;
+    }
+    nav ul li a {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    header {
+        margin-top: 3rem;
+   
+    }
+    .lorem-section {
+        background-size: contain;
+        padding-left:.5rem;
+    }
+    .lorem-section.button{
+     margin-left:5rem;   
+    }
+
+
+    .product-section {
+        flex-direction: column;
+    }
+
+    .product-section .content-container {
+        width: 100%;
+        margin-left: 2px;
+        margin-top: 5rem;
+    }
+    .product-section .content-container img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .product-section .image-container {
+        object-fit: contain;
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 4px;
+    }
+    .product-section .image-container img {
+        height: 70%;
+        width: 70%;
+    }
+    .product-section .content-container h1 {
+        font-size: 1.7rem;
+        color: #e5474b;
+    }
+    .product-section .image-container h1 {
+        font-size: 1.7rem;
+        color: #e5474b;
+    }
+    .about-section {
+        flex-direction: column;
+        width:100%
+    }
+    .about-section .content-container {
+        width: 100%;
+        padding-top: 2rem;
+    }
+    .about-section img {
+        height: 3rem;
+        padding-top: 1rem;
+    }
+    .form-section {
+        flex-direction: column;
+        width:100%;
+        padding-left:1rem;
+    }
+    .form-field {
+        width: 100%;
+        padding: 2rem 0;
+        font-size: 1.5rem;
+        
+    }
+    .form-field:nth-child(1) {
+        float: left;
+    }
+
+    .form-field:nth-child(2) {
+        float: left;
+    }
+
+  .footer{
+    padding-left:0.5rem;
+    font-size: 0.5rem;
+}
+}
